@@ -3,13 +3,13 @@ import PropTypes from "prop-types";
 
 function Item(props){
 return (
-  <>
+  <React.Fragment>
   <div onClick = {() => props.whenItemClicked(props.id)}>
   <h3>{props.name}</h3>
   <p><em>{props.description} - {props.quantity}</em></p>
   <hr/>
   </div>
-  </>
+  </React.Fragment>
 );
 }
 

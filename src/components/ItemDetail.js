@@ -5,7 +5,7 @@ function ItemDetail(props){
   const { item, onClickingDelete } = props;
 
   return (
-    <>
+    <React.Fragment>
       <h1>Item Detail</h1>
       <h3>{item.name}</h3>
       <p>{item.description}</p>
@@ -13,7 +13,7 @@ function ItemDetail(props){
       <button onClick={ props.onClickingEdit}>Edit Item</button>
       <button onClick={()=> onClickingDelete(item.id) } > Delete Item </button>
       <hr/>
-      </>
+    </React.Fragment>
   );
 }
 

@@ -11,11 +11,12 @@ function EditItemForm(props){
   }
 
   return(
-    <>
+    <React.Fragment>
       <ReusableForm
         formSubmissionHandler={handleEditItemFormSubmission}
-        buttonText="Submit" />
-    </>
+        buttonText="Submit" 
+        item={item}/>
+    </React.Fragment>
   );
 }
 

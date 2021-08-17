@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 function MerchList(props){
   return( 
-    <>
+    <React.Fragment>
       {props.merchList.map((item) => 
       <Item 
       whenItemClicked={props.onItemSelection}
@@ -14,7 +14,7 @@ function MerchList(props){
       key={item.id}
       id={item.id} />
       )}
-    </>
+    </React.Fragment>
   );
 }
 
